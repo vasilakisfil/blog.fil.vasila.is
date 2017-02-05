@@ -7,8 +7,9 @@ image = ""
 slug = "about"
 draft = false
 menu = ""
-comments = true
-share = true
+comments = false
+share = false
+noauthor = true
 
 +++
 

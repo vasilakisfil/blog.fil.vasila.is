@@ -29,7 +29,7 @@ canonifyurls = true
     twitter = "vasilakisfil"
 
 [[menu.main]]
-  name = "Blog"
+  name = "Home"
   weight = -120
   identifier = "blog"
   url = "/"
