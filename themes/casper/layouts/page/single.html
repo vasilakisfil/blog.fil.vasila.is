@@ -90,7 +90,11 @@
         </section>
     </header>
 
-    <section class="post-content">
+    {{if eq .Params.aligncenter true}}
+      <section class="post-content align-center">
+    {{else}}
+      <section class="post-content">
+    {{end}}
 
 
 {{ .Content }}
