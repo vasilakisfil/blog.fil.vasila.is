@@ -5,7 +5,7 @@ Title= "Just Random Thoughts"
 paginate = 5
 DisqusShortname = "YOUR_SHORT_NAME_HERE"
 #Copyright = "MIT lisence"
-canonifyurls = true
+canonifyurls = false
 
 
 [params]
