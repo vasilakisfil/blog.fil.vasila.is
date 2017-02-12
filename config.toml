@@ -1,5 +1,5 @@
 theme = "casper"
-BaseUrl= "http://blog.fil.vasilak.is/"
+BaseUrl= "//"
 LanguageCode= "en-us"
 Title= "Just Random Thoughts"
 paginate = 5
