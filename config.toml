@@ -1,5 +1,5 @@
 theme = "casper"
-BaseUrl= "//"
+BaseUrl= ""
 LanguageCode= "en-us"
 Title= "Just Random Thoughts"
 paginate = 5
