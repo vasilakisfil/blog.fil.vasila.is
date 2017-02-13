@@ -1,12 +1,11 @@
 theme = "casper"
-BaseUrl= ""
+baseURL= "http://blog.fil.vasilak.is/"
 LanguageCode= "en-us"
 Title= "Just Random Thoughts"
 paginate = 5
 DisqusShortname = "YOUR_SHORT_NAME_HERE"
 #Copyright = "MIT lisence"
 canonifyurls = false
-
 
 [params]
   description = "about anything techie"
