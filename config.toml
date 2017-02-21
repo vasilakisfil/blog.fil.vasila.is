@@ -34,7 +34,14 @@ canonifyurls = false
   url = "/"
 
 [[menu.main]]
+  name = "Talks"
+  weight = -110
+  identifier = "talks"
+  url = "/talks"
+
+[[menu.main]]
   name = "About me"
   weight = -110
   identifier = "about"
   url = "/about"
+
