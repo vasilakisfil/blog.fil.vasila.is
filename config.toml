@@ -15,7 +15,7 @@ canonifyurls = false
   authorwebsite = "http://fil.vasilak.is"
   bio = "Web Engineer"
   logo = "images/logo.jpg"
-  googleAnalyticsUserID = "UA-79101-12"
+  googleAnalyticsUserID = "UA-44681025-2"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   #RSSLink = "http://feeds.feedburner.com/..."
   githubName = "vasilakisfil"
