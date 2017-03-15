@@ -63,4 +63,4 @@ module.exports = {
 Now `{{content-for "variables"}}` will basically run the code returned by the hook method,
 giving you access to your environment variables, on build time.
 
-I should note that those hooks are available on regular (out-of-repo) addons.
+I should note that those hooks are also available on regular (out-of-repo) addons.
