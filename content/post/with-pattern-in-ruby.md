@@ -49,5 +49,8 @@ That now even fits in one line.
 <% end %>
 ```
 
+Another good thing with this pattern is that you can see the scope of `dep` variable
+so it doesn't pollute your whole (template) namespace.
+
 Usually long diameters is not the best thing to have, but when you do have them
 this little thing could help you make your code more beautiful :)
