@@ -5,7 +5,7 @@ title = "Creating methods dynamically in a Ruby object"
 author = ""
 share = true
 menu = ""
-date = "2017-04-09"
+date = "2017-04-02"
 draft = false
 
 +++
