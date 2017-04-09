@@ -136,7 +136,7 @@ class SessionsController < ApplicationController
 
     if result.success?
       @current_user = result.user
-      head :ok
+      head :created
     else
       render(json: {errors: result.errors}, status: result.status)
     end
