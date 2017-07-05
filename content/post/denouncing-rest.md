@@ -59,3 +59,20 @@ This term us mostly used by
 
 
 Roy's model is weird: it was rarely fully employed to have 100% evolvability and when it was all it's drawbacks appeared: complexity and performance issues.
+
+
+Some people call such APIs AI-driven APIs, or autonomous APIs but it's all about **evolvability**.
+If you can design an architecture style that is **evolvable** yest simple enough and applies/does not break
+to our current Internet's protocols (like HTTP) then none can accuse you of using it.
+RPC-based, hypermedia-based, whatever-driven, if it's evolvable and convinces us of using it (like it's very simple)
+then none can accuse you about your API architecture.
+Apparently people want want (from our experience with REST) first simplicity and then evolvability.
+When we say evolvability, we mean without touching/breaking the clients.
+At the moment we have only REST though which is evolvable but not simple. IT's complex.
+
+
+We see that people fail to understand the full extend of Roy's initial `REST` model and what is happening is that
+some elements of that REST are applied, some other not and eventually we have a model that has the downsides of both worlds.
+
+
+No you don't need GraphQL
