@@ -76,3 +76,68 @@ some elements of that REST are applied, some other not and eventually we have a 
 
 
 No you don't need GraphQL
+
+
+
+In this Manifesto we will try to kill Roy's model.
+It gave us great insights but let's be pragmatic: it will never work out.
+
+We need to **be brave enough and move on**: Roy's HATEOAS-based REST model can be declared as deprecated.
+
+Introspected REST is an alternative backwards compatible API. No breaking changes are needed.
+
+##############################################################
+If you want to build the next Introspected-REST spec, you can follow the following reasoning.
+Note that this reasoning is message-agnostic, meaning that we use here JSON just because we know it better
+but your spec could use anything, yaml, xml etc.
+
+* Start with some SANE defaults and the axion: The simpler your API (and the lesser it deviates from defaults), the simpler the introspection-meta-data should be
+* Reach a concencus on a Introspection spec using already defined specs like JSON-Schemas.
+* Reach a concencus on a querying language over url (filter + aggregation + pagination)
+* Reach a concencus on an URL-API for attribute/association inclusion
+* Reach a concencus on linking
+* Reach a concencus on denoting linked/semantic data
+* Reach a concencus on document structure (root element, meta attributes which should appear in the simple response as well etc)
+Each of those could be a separate Media Type
+
+So we keep 80% of the REST constraints and while we understand the benefits of other 20% we switch it with an on-demand alternative that makes the final thing
+more flexible and powerful while keeping the final data simple.
+
+Introspected REST model is flexible enough to cover all those user cases.
+It's not a model that is black or white: your API is either Introspected-REST-compliant or it isn't, like REST.
+
+It should be noted this model is not something we conceived in a lab. Some [people]()
+have already tried to implement something similar, probably without really knowing
+what they were doing.
+
+You see, the shadow of Roy Fielding is above any API developer:
+we are afraid to deprecate Roy's REST model and as a result what we are doing is that
+we take some elements of Roy's model, apply them, and name our API or spec as RESTSful.
+Eventually however, the final result is even worse. It doesn't have Roy's key elements for
+a Markov-chain-like client (we still have offline contracts) yet we have added complexity
+to our API for little result.
+
+
+Probably Roy won't like that. He will either:
+* declare that Introspected REST is a stupid manifesto that has nothing to do with his REST or
+* he will declare the Introspected REST is just yet another REST as he defined it and we never
+read his dissertation to actually see that we are defining yet another REST style.
+
+In either case, given that very few has really implemented a Roy-compliant REST API means
+that Roy himself failed to explain his model correctly.
+
+Are we sliding a lot from Roy's initial model? No, we modernize it a little bit.
+
+
+#### 5.3. An alternative architectural style maybe?
+Most of those Media Types specifications would not be needed if the APIs were built
+with introspection in mind.
+
+Imagine that we have a Media Type that allows us to describe new media types, called `generic_media_type`.
+Then the clients would only need to understand and parse this `generic_media_type` and derive the other
+Media Types.
+Of course, this scenario is more difficult than it sounds and the goal of this _manifesto_ is not
+to provide a generic Media Type.
+Nevertheless, API introspection, as we will see, can provide us with information on API's
+capabilities along with hypermedia in a much flexible and cleaner way, _without having data and hypermedia (representation metadata) tangled together in 
+the representation_.
