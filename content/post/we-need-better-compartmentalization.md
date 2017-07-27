@@ -53,4 +53,4 @@ installed gems don't even have access to such information **by default**.
 Let the user inject what she thinks that is necessary for her installed gem to work, through the initializers.
 Classes should not be open for extension **by default**, unless the user instructs differently (that could be a bit challenging).
 
-It might take some time and effort but we need better compartmentalization to increase security in our apps, by default.
+It might take some time and effort but we need to invest time and find better ways on how to protect ourselves from such and similar attacks.
